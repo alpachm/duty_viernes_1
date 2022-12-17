@@ -1,0 +1,88 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --darkGrey: #262f38;
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --orangeColor: #fc7613;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    color: var(--White)
+}
+
+body {
+    background: var(--VeryDarkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.conteiner {
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(32, 39, 49, 1) 0%, rgba(27, 29, 34, 1) 100%);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 350px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.btn {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 2.5rem;
+    text-align: center;
+}
+
+.logo {
+    background: var(--DarkBlue);
+}
+
+.conteiner h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.conteiner p {
+    color: var(--LightGrey)
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.numbers a {
+    background: var(--darkGrey);
+    text-decoration: none;
+    color: var(--LightGrey);
+}
+
+.conteiner__btn {
+    background: var(--orangeColor);
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
