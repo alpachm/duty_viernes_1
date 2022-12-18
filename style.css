@@ -22,6 +22,7 @@
 body {
     background: var(--VeryDarkBlue);
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -89,4 +90,8 @@ body {
 
 .conteiner p a:hover {
     color: blue;
+}
+
+body>p {
+    margin-top: 1rem;
 }
